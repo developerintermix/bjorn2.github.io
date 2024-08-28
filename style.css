@@ -43,9 +43,11 @@
     border: 0;
   }
 
-  button:hover {
+  button:hover, button:focus {
     color: purple;
+    outline: none;
   }
+
 
   .container {
     background-color: var(--white);
@@ -53,6 +55,7 @@
     max-width: 800px;
     padding: 24px;
     margin: 16px;
+    margin-top: 12%;
   }
 
   .container__headline {
@@ -68,11 +71,13 @@
 
   .accordion-container  .accordion-container__item:not(:last-child) {
     border-bottom: 2px solid var(--light-pink);
+    
   }
+
   .accordion-container__item {
-    margin-top: 25px;
-    margin-bottom: 15px;
+    padding: 28.5px 0;
   }
+  
 
   .accordion-container__item .accordion-container__icons img {
     min-width: 30px;
@@ -86,7 +91,7 @@
     background-color: var(--white);
     max-height: 0;
     overflow: hidden;
-    transition: max-height 200ms ease;
+    transition: max-height 0.5s ease-out;
   }
 
   .accordion-description p {
@@ -103,7 +108,9 @@
         background-image: url(assets/images/background-pattern-mobile.svg);
         
     }
-    
+
     
     
   }
+
+ 
